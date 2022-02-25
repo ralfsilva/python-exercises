@@ -13,6 +13,5 @@ if (lado12 > lado3 or lado13 > lado2 or lado23 > lado1):
         print ("Triângulo Isósceles.")
     elif (lado1 != lado2 != lado3):
         print ("Triângulo Escaleno.")
-
 else:
     print ("Essas medidas não geram um triângulo.")
