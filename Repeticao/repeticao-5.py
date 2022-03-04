@@ -1,5 +1,20 @@
-paisA = float(input("Digite a população do Pais A, entre 50.000 - 100.000: "))
-paisB = float(input("Digite a população do Pais B, entre 200.000 - 300.000: "))
+valida = validaB = True
+
+while valida:    
+    paisA = float(input("Digite a população do Pais A, entre 50.000 - 100.000: "))
+    if paisA >= 50.000 and paisA <= 100.000:
+        valida = False
+    else:
+        print ("Erro! Tente novamente.")
+        valida = True
+
+while validaB:
+    paisB = float(input("Digite a população do Pais B, entre 200.000 - 300.000: "))
+    if paisB >= 200.000 and paisB <= 300.000:
+        validaB = False
+    else:
+        print ("Erro! Tente novamente.")
+        valida = True
 
 taxaA = float(input("Digite a taxa de crescimento do País A: "))
 taxaB = float(input("Digite a taxa de crescimento do País B: "))
