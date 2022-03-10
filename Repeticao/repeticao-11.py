@@ -18,4 +18,5 @@ if inter1 < inter2:
         if inter1 == inter2:
             seq = False
 
-print ("A sequência entre {} e {} e a soma {}".format(copy, inter2))
+total = copy + inter2
+print ("A sequência entre {} e {} e a soma {}".format(copy, inter2, total))
