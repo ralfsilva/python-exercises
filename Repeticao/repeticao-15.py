@@ -1,20 +1,15 @@
-print ('-'*30)
-print ('Sequência de Fibonacci')
-print ('-'*30)
+""" Sequência de Fibonacci
+    f1 -> f2 -> f1 -> f2 -> f1
+    0      1     1     2    3 """
 
-n = int(input('Quantos termos você deseja mostrar? '))
+f1 = 0
+f2 = 1
+f3 = 0
+print ("{} -> {} -> ".format(f1, f2), end='')
 
-t1 = 0
-t2 = 1
-
-print ('-'*30)
-print ('{} -> {}'.format(t1, t2), end='')
-cont = 3
-while cont <= n:
-    t3 = t1 + t2
-    print (' -> {}'.format(t3), end='')
-    cont += 1
-    t1 = t2
-    t2 = t3
+while f2 < 100:
     
-print (' -> FIM!')
+    f3 = f1 + f2
+    print ("{} -> ".format(f3), end='')
+    f1 = f2
+    f2 = f3
